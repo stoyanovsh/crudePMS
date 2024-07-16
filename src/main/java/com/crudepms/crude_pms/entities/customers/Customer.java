@@ -22,8 +22,7 @@ public class Customer {
     private String middle_name;
     private String last_name;
     private List<Phone> phoneNumberList;
-    private Address current_address;
-    private Address company_address;
+    private List<Address> addressList;
     private List<Reservation> reservationsList;
     private List<Payments>  paymentsList;
     private double totalPayments;

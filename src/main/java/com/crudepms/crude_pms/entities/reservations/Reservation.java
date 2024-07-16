@@ -1,6 +1,7 @@
 package com.crudepms.crude_pms.entities.reservations;
 
 import com.crudepms.crude_pms.entities.customers.Customer;
+import com.crudepms.crude_pms.entities.rooms.Occupancy;
 import com.crudepms.crude_pms.entities.rooms.Room;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
@@ -10,6 +11,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -25,16 +27,18 @@ public class Reservation {
     @ManyToOne
     private ReservationChannel reservationChannel;
     @ManyToMany
-    private Room room;
+    private List<Room> room;
     @ManyToOne
-    private Contract contact_id;
+    private Contract contact;
     private Timestamp reservationDate;
     private Timestamp reservationBeginDate;
     private Timestamp reservationEndDate;
     private int reservationStatus;
     private String voucherNumber;
-    private int roomOccupancy;
     private double reservationAmount;
+    private String comment;
+    private Occupancy occupancy;
+
 
 
 
