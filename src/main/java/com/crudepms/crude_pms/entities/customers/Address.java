@@ -14,7 +14,10 @@ public class Address {
     @Id
     private int addressId;
     private int countryId;
+    private String cityName;
+    private String stateName;
     private String address;
+    private String zipCode;
 
 
 }

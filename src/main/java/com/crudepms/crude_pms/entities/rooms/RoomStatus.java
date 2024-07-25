@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class RoomStatus {
 
     @Id
-    private int roomStatus_id;
-    private String roomStatus_name;
-    private String roomStatus_description;
+    private int roomStatusId;
+    private String roomStatusName;
+    private String roomStatusDescription;
 }

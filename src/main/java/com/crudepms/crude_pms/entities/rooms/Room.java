@@ -12,9 +12,13 @@ import lombok.NoArgsConstructor;
 public class Room {
 
     @Id
-    private int room_id;
-    private RoomType room_type_id;
-    private RoomStatus room_status_id;
+    private int roomId;
+    private RoomType roomTypeId;
+    private RoomStatus roomStatusId;
+    private int roomCapacity;
+    private int roomCategoryLevel;
+    private int roomFloor;
+
 
 
 }

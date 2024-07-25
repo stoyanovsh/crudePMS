@@ -11,10 +11,14 @@ import lombok.NoArgsConstructor;
 public class RoomType {
 
     @Id
-    private int room_type_id;
-    private String room_type_name;
-    private int room_type_adult_occupancy;
-    private int room_type_child_occupancy;
-    private String room_type_description;
+    private int roomTypeId;
+    private String roomTypeName;
+    private int roomTypeAdultOccupancy;
+    private int roomTypeChildOccupancy;
+    private int roomTypeMaxOccupancy;
+    private int roomTypeMaxAdultOccupancy;
+    private int roomTypeMaxChildOccupancy;
+    private String roomTypeDescription;
+    private int roomTypeRank;
 
 }
